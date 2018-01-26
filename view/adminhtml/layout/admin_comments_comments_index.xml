@@ -1,0 +1,13 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="styles"/>
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="page.title">
+                <action method="setPageTitle">
+                    <argument translate="true" name="title" xsi:type="string">Comments</argument>
+                </action>
+            </referenceBlock>
+            <uiComponent name="comments_listing"/>
+        </referenceContainer>
+    </body>
+</page>

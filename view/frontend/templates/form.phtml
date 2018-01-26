@@ -1,0 +1,40 @@
+<?php
+
+$currentProduct = $block->getCurrentProduct();
+$currentProductId = $currentProduct->getId();
+
+?>
+<h2><span><?= __("Add new comment") ?></span></h2>
+
+<form action="<?php echo $this->getUrl("comments/post/index") ?>" method="post" data-mage-init='{"validation":{}}'>
+
+    <fieldset class="fieldset comment-fieldset"
+              data-hasrequired="<?= $block->escapeHtmlAttr(__('* Required Fields')) ?>">
+        <div class="field comment-field-name required">
+            <label for="name_field" class="label"><span><?= __('Name') ?></span></label>
+            <div class="control">
+                <input type="text" class="input" name="name" id="name_field" data-validate="{required:true}"/>
+            </div>
+        </div>
+        <div class="field comment-field-email required">
+            <label for="email_field" class="label"><span><?= __('Email') ?></span></label>
+            <div class="control">
+                <input type="email" class="input" name="email" id="email_field"
+                       data-validate="{required:true, 'validate-email':true}"/>
+            </div>
+        </div>
+        <div class="field comment-field-text required">
+            <label for="comment_field" class="label"><span><?= $block->escapeHtml(__('Comment')) ?></span></label>
+            <div class="control">
+            <textarea name="comment" id="comment_field" cols="5" rows="3"
+                      data-validate="{required:true, maxlength:255}"></textarea>
+            </div>
+        </div>
+
+        <input type="hidden" class="input" name="product_id" id="product_id" value="<?php echo $currentProductId; ?>"/>
+        <input type="hidden" class="input" name="created_at" id="created_at"/>
+    </fieldset>
+    <div class="primary actions-primary">
+        <button type="submit" class="action submit primary"><span><?= __('Submit') ?></span></button>
+    </div>
+</form>
