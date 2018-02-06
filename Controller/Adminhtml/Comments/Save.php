@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: magebit
- * Date: 18.4.1
- * Time: 16:05
- */
+
 
 namespace Magebit\ProductComments\Controller\Adminhtml\Comments;
 
