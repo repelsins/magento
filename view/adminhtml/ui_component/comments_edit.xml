@@ -2,14 +2,14 @@
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <argument name="data" xsi:type="array">
         <item name="js_config" xsi:type="array">
-            <item name="provider" xsi:type="string">comments_new.comments_new_data_source</item>
-            <item name="deps" xsi:type="string">comments_new.comments_new_data_source</item>
+            <item name="provider" xsi:type="string">comments_edit.comments_edit_data_source</item>
+            <item name="deps" xsi:type="string">comments_edit.comments_edit_data_source</item>
         </item>
 
         <item name="label" xsi:type="string" translate="true">Comments</item>
         <item name="config" xsi:type="array">
             <item name="dataScope" xsi:type="string">data</item>
-            <item name="namespace" xsi:type="string">comments_new</item>
+            <item name="namespace" xsi:type="string">comments_edit</item>
         </item>
 
         <item name="template" xsi:type="string">templates/form/collapsible</item>
@@ -22,10 +22,10 @@
         </item>
 
     </argument>
-    <dataSource name="comments_new_data_source">
+    <dataSource name="comments_edit_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
             <argument name="class" xsi:type="string">Magebit\ProductComments\Model\Comment\DataProvider</argument>
-            <argument name="name" xsi:type="string">comments_new_data_source</argument>
+            <argument name="name" xsi:type="string">comments_edit_data_source</argument>
             <argument name="primaryFieldName" xsi:type="string">comment_id</argument>
             <argument name="requestFieldName" xsi:type="string">id</argument>
             <argument name="data" xsi:type="array">
@@ -51,7 +51,7 @@
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="dataType" xsi:type="string">text</item>
-                    <item name="label" xsi:type="string" translate="true">Product Name</item>
+                    <item name="label" xsi:type="string" translate="true">Product ID</item>
                     <item name="formElement" xsi:type="string">input</item>
                     <item name="source" xsi:type="string">product_id</item>
                     <item name="dataScope" xsi:type="string">product_id</item>
@@ -70,8 +70,6 @@
                     <item name="formElement" xsi:type="string">input</item>
                     <item name="source" xsi:type="string">name</item>
                     <item name="dataScope" xsi:type="string">name</item>
-                    <item name="default" xsi:type="string">admin</item>
-                    <item name="disabled" xsi:type="boolean">true</item>
                     <item name="validation" xsi:type="array">
                         <item name="required-entry" xsi:type="boolean">true</item>
                         <item name="max_text_length" xsi:type="number">55</item>
@@ -87,8 +85,6 @@
                     <item name="formElement" xsi:type="string">input</item>
                     <item name="source" xsi:type="string">email</item>
                     <item name="dataScope" xsi:type="string">email</item>
-                    <item name="default" xsi:type="string">admin@admin.com</item>
-                    <item name="disabled" xsi:type="boolean">true</item>
                     <item name="validation" xsi:type="array">
                         <item name="required-entry" xsi:type="boolean">true</item>
                         <item name="max_text_length" xsi:type="number">55</item>
@@ -121,21 +117,6 @@
                     <item name="formElement" xsi:type="string">select</item>
                     <item name="dataScope" xsi:type="string">status_id</item>
                     <item name="default" xsi:type="string">0</item>
-                    <item name="validation" xsi:type="array">
-                        <item name="required-entry" xsi:type="boolean">true</item>
-                    </item>
-                </item>
-            </argument>
-        </field>
-        <field name="date">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                    <item name="dataType" xsi:type="string">string</item>
-                    <item name="label" xsi:type="string" translate="true">Date</item>
-                    <item name="formElement" xsi:type="string">date</item>
-                    <item name="source" xsi:type="string">page</item>
-                    <item name="sortOrder" xsi:type="number">21</item>
-                    <item name="dataScope" xsi:type="string">created_at</item>
                     <item name="validation" xsi:type="array">
                         <item name="required-entry" xsi:type="boolean">true</item>
                     </item>

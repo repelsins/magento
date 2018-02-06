@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: magebit
- * Date: 18.4.1
- * Time: 15:52
- */
 
 namespace Magebit\ProductComments\Block\Adminhtml\Comment\Edit;
 

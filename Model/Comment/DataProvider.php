@@ -11,6 +11,10 @@ namespace Magebit\ProductComments\Model\Comment;
 use Magebit\ProductComments\Model\ResourceModel\Comments\CollectionFactory;
 use Magento\Ui\DataProvider\AbstractDataProvider;
 
+/**
+ * Class DataProvider
+ * @package Magebit\ProductComments\Model\Comment
+ */
 class DataProvider extends AbstractDataProvider
 {
     /**

@@ -1,15 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: magebit
- * Date: 18.4.1
- * Time: 15:48
- */
 
 namespace Magebit\ProductComments\Block\Adminhtml\Comment\Edit;
 
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
 
+/**
+ * Class DeleteButton
+ * @package Magebit\ProductComments\Block\Adminhtml\Comment\Edit
+ */
 class DeleteButton extends GenericButton implements ButtonProviderInterface
 {
     /**

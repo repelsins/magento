@@ -13,6 +13,10 @@ use Magento\Framework\View\Element\UiComponentFactory;
 use Magento\Ui\Component\Listing\Columns\Column;
 use Magento\Framework\UrlInterface;
 
+/**
+ * Class CommentsActions
+ * @package Magebit\ProductComments\Ui\Component\Listing\Column
+ */
 class CommentsActions extends Column
 {
     /**

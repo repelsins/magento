@@ -1,18 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: magebit
- * Date: 17.21.12
- * Time: 16:55
- */
 
 namespace Magebit\ProductComments\Block;
 
-
 use Magento\Catalog\Block\Product\View;
 
+/**
+ * Class CommentsTab
+ * @package Magebit\ProductComments\Block
+ */
 class CommentsTab extends View
 {
+    /**
+     * @return string
+     */
     public function _toHtml()
     {
         if (!$this->getProduct()->getData('commenting')) {

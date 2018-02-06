@@ -4,6 +4,10 @@ namespace Magebit\ProductComments\Model\ResourceModel\Comments;
 
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
+/**
+ * Class Collection
+ * @package Magebit\ProductComments\Model\ResourceModel\Comments
+ */
 class Collection extends AbstractCollection
 {
 

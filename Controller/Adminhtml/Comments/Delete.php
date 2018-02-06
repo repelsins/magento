@@ -1,18 +1,19 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: magebit
- * Date: 18.11.1
- * Time: 16:37
- */
 
 namespace Magebit\ProductComments\Controller\Adminhtml\Comments;
 
 use Magento\Backend\App\Action;
 use Magebit\ProductComments\Model\Comments;
 
+/**
+ * Class Delete
+ * @package Magebit\ProductComments\Controller\Adminhtml\Comments
+ */
 class Delete extends Action
 {
+    /**
+     * @var Comments
+     */
     protected $_model;
 
     /**

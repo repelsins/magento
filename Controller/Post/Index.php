@@ -14,7 +14,10 @@ use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Stdlib\DateTime\DateTime;
 
 
-
+/**
+ * Class Index
+ * @package Magebit\ProductComments\Controller\Post
+ */
 class Index extends Action
 {
     protected $datetime;
@@ -41,7 +44,13 @@ class Index extends Action
                     ->save();
             $this->messageManager->addSuccess(__('You submitted your comment for moderation.'));
         } else {
-            $this->messageManager->addError(__('We can\'t post your comment right now.'));
+            if (is_array($validate)) {
+                foreach ($validate as $errorMessage) {
+                    $this->messageManager->addError($errorMessage);
+                }
+            } else {
+                $this->messageManager->addError(__('We can\'t post your review right now.'));
+            }
             }
         $redirect = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
         $redirect->setUrl($this->_redirect->getRefererUrl());

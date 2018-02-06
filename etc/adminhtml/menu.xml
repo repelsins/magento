@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Magebit_ProductComments::admin_comments" title="Comments" module="Magebit_ProductComments" sortOrder="51" resource="Magebit_ProductComments::admin_comments"/>
-        <add id="Magebit_ProductComments::comments" title="Manage Comments" module="Magebit_ProductComments" sortOrder="10" action="admin_comments/comments" resource="Magebit_ProductComments::comments" parent="Magebit_ProductComments::admin_comments"/>
+        <add id="Magebit_ProductComments::admin_comments" title="Magebit" module="Magebit_ProductComments" sortOrder="51" resource="Magebit_ProductComments::admin_comments"/>
+        <add id="Magebit_ProductComments::comments" title="Product Comments" module="Magebit_ProductComments" sortOrder="10" action="admin_comments/comments" resource="Magebit_ProductComments::comments" parent="Magebit_ProductComments::admin_comments"/>
     </menu>
 </config>

@@ -14,6 +14,10 @@ use Magento\Ui\Component\MassAction\Filter;
 use Magento\Backend\App\Action;
 use Magebit\ProductComments\Model\ResourceModel\Comments\CollectionFactory;
 
+/**
+ * Class MassDelete
+ * @package Magebit\ProductComments\Controller\Adminhtml\Comments
+ */
 class MassDelete extends Action
 {
     /**

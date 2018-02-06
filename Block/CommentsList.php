@@ -6,14 +6,24 @@ use Magento\Framework\View\Element\Template;
 use Magebit\ProductComments\Model\CommentsFactory;
 use Magento\Framework\Registry;
 
+/**
+ * Class CommentsList
+ * @package Magebit\ProductComments\Block
+ */
 class CommentsList extends Template
 {
     /**
      * @var \Magebit\ProductComments\Model\CommentsFactory
      */
     protected $_commentsFactory;
+    /**
+     * @var Registry
+     */
     protected $_registry;
 
+    /**
+     * @var string
+     */
     protected $_template = 'Magebit_ProductComments::list.phtml';
 
     /**
@@ -70,6 +80,10 @@ class CommentsList extends Template
     {
         return $this->getChildHtml('pager');
     }
+
+    /**
+     * @return mixed
+     */
     public function getCurrentProduct()
     {
         return $this->_registry->registry('current_product');

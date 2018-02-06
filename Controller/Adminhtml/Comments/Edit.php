@@ -11,6 +11,10 @@ namespace Magebit\ProductComments\Controller\Adminhtml\Comments;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Backend\App\Action;
 
+/**
+ * Class Edit
+ * @package Magebit\ProductComments\Controller\Adminhtml\Comments
+ */
 class Edit extends Action
 {
     /**

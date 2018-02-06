@@ -4,6 +4,10 @@ namespace Magebit\ProductComments\Model;
 
 use Magento\Framework\Model\AbstractModel;
 
+/**
+ * Class Comments
+ * @package Magebit\ProductComments\Model
+ */
 class Comments extends AbstractModel
 {
     /**
@@ -24,7 +28,7 @@ class Comments extends AbstractModel
         $errors = [];
 
         if (!\Zend_Validate::is($this->getEmail(), 'EmailAddress')) {
-            $errors[] = __('Invalid email address "%s".', $this->getEmail());
+            $errors[] = __('Invalid email address.');
         }
 
         if (!\Zend_Validate::is($this->getName(), 'NotEmpty')) {

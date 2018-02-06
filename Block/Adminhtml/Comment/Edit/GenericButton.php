@@ -1,14 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: magebit
- * Date: 18.4.1
- * Time: 15:42
- */
 
 namespace Magebit\ProductComments\Block\Adminhtml\Comment\Edit;
 
 use Magento\Backend\Block\Widget\Context;
+
 /**
  * Class GenericButton
  */
@@ -24,7 +19,8 @@ class GenericButton
      */
     public function __construct(
         Context $context
-    ) {
+    )
+    {
         $this->context = $context;
     }
 

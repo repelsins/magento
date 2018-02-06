@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: magebit
- * Date: 18.23.1
- * Time: 14:48
- */
 
 namespace Magebit\ProductComments\Controller\Adminhtml\Comments;
 
@@ -15,7 +9,7 @@ use Magento\Backend\App\Action;
 use Magebit\ProductComments\Model\ResourceModel\Comments\CollectionFactory;
 
 /**
- * Class MassDisable
+ * Class MassStatus
  */
 class MassStatus extends Action
 {

@@ -6,6 +6,10 @@ use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
 use Magebit\ProductComments\Model\CommentsFactory;
 
+/**
+ * Class Index
+ * @package Magebit\ProductComments\Controller\Index
+ */
 class Index extends Action
 {
     /**
@@ -25,13 +29,10 @@ class Index extends Action
         $this->_modelCommentsFactory = $modelCommentsFactory;
     }
 
+
     public function execute()
     {
-        /**
-         * When Magento get your model, it will generate a Factory class
-         * for your model at var/generaton folder and we can get your
-         * model by this way
-         */
+
         $commentsModel = $this->_modelCommentsFactory->create();
 
         // Load the item with ID is 1
