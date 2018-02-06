@@ -1,15 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: magebit
- * Date: 18.4.1
- * Time: 15:43
- */
 
 namespace Magebit\ProductComments\Block\Adminhtml\Comment\Edit;
 
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
 
+/**
+ * Class BackButton
+ * @package Magebit\ProductComments\Block\Adminhtml\Comment\Edit
+ */
 class BackButton extends GenericButton implements ButtonProviderInterface
 {
     /**

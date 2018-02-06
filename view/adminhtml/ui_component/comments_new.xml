@@ -70,6 +70,7 @@
                     <item name="formElement" xsi:type="string">input</item>
                     <item name="source" xsi:type="string">name</item>
                     <item name="dataScope" xsi:type="string">name</item>
+                    <item name="default" xsi:type="string">admin</item>
                     <item name="validation" xsi:type="array">
                         <item name="required-entry" xsi:type="boolean">true</item>
                         <item name="max_text_length" xsi:type="number">55</item>
@@ -85,6 +86,7 @@
                     <item name="formElement" xsi:type="string">input</item>
                     <item name="source" xsi:type="string">email</item>
                     <item name="dataScope" xsi:type="string">email</item>
+                    <item name="default" xsi:type="string">admin@admin.com</item>
                     <item name="validation" xsi:type="array">
                         <item name="required-entry" xsi:type="boolean">true</item>
                         <item name="max_text_length" xsi:type="number">55</item>
@@ -116,6 +118,7 @@
                     <item name="label" translate="true" xsi:type="string">Status</item>
                     <item name="formElement" xsi:type="string">select</item>
                     <item name="dataScope" xsi:type="string">status_id</item>
+                    <item name="default" xsi:type="string">0</item>
                     <item name="validation" xsi:type="array">
                         <item name="required-entry" xsi:type="boolean">true</item>
                     </item>
